@@ -28,7 +28,7 @@ body {
 }
 
 .artist-image {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
     display: block;
     margin: 10px auto 0;
