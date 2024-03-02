@@ -51,9 +51,11 @@ ul {
 }
 
 .logo,
+
 .label_h {
     color: var(--color_blanco);
     cursor: pointer;
+
 }
 
 .bi {}
@@ -69,20 +71,57 @@ ul {
     top: var(--altura_header);
     right: 0;
     overflow: hidden;
-    height: calc(100vh - var(--altura_header));
+    height: calc(150vh - var(--altura_header));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     z-index: 1000;
-    transition: all .3s;
+    transition: all .2s;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+
+/*iconos de las redes sociales*/
+
+.logo {
+    margin-right: 35px;
+    /* Ajusta el margen entre el logotipo y los iconos */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    /* Alinear horizontalmente */
+    margin-top: -15px;
+    /* Espacio entre el texto y los iconos */
+
+}
+
+.social-icon img {
+    width: 35px;
+    /* Establecer el ancho deseado */
+    height: 35px;
+    /* Establecer la altura deseada */
+    margin-right: 15px;
+    /* Ajusta el margen derecho según sea necesario */
+    margin-bottom: 10px;
+    /* Espacio entre los iconos */
+    margin: 0 3px;
+    /* Espacio entre los iconos */
+}
+
 
 .li_link {}
 
 .link {
-    font-size: 3.5em;
+    font-size: 2.5em;
+    /*tmaño del texto menu*/
     color: var(--color_blanco);
     font-weight: bold;
 }
@@ -110,6 +149,8 @@ ul {
         background-color: #6b6565;
     }
 }
+
+
 
 .container {
     max-width: 800px;
