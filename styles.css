@@ -59,7 +59,7 @@ ul {
 }
 
 .menu_hi:checked+.ul_link {
-    margin-top: -30px;
+    margin-top: -15px;
     width: 100vw;
     height: 100vh;
     padding-top: 95px;
