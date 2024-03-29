@@ -1,0 +1,80 @@
+h1 {
+    margin: 0;
+}
+
+.collaborations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 90px;
+    /* Margen superior para evitar el encabezado */
+    margin-bottom: 70px;
+    /* Margen inferior para evitar el pie de página */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collaboration {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    transition: transform 0.3s ease;
+}
+
+
+
+.collaboration:hover {
+    transform: translateY(-5px);
+    /* Efecto de acercamiento */
+}
+
+.collaboration img {
+    width: 60%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    /* Espacio inferior entre la imagen y el texto */
+    margin-top: 15px;
+    /* Ajustar el margen superior */
+    border-radius: 10px;
+    /* Bordar redondeados */
+}
+
+.collaboration-info {
+    padding: 15px;
+    text-align: justify;
+}
+
+h2 {
+    ;
+    text-align: center;
+    /* Centrar el nombre del artista */
+}
+
+@media screen and (max-width: 768px) {
+    .collaborations {
+        padding: 10px;
+    }
+
+    .collaboration {
+        width: calc(50% - 20px);
+        /* Ajusta el ancho para dispositivos más pequeños */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .collaboration {
+        width: calc(100% - 20px);
+        /* Ajusta el ancho para dispositivos aún más pequeños */
+    }
+}
