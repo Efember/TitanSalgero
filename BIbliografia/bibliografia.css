@@ -1,45 +1,59 @@
-.biografia {
+.card {
+    width: 90%;
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.titulo {
-    color: #ffd700;
-    /* Amarillo */
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.foto {
-    margin-bottom: 20px;
-}
-
-.foto img {
-    width: 200px;
-    /* Ajusta el tamaño de la foto */
-    height: 200px;
-    /* Ajusta el tamaño de la foto */
-    object-fit: cover;
-    /* Ajusta la imagen para que llene el cuadro sin deformarla */
+    margin: 50px auto;
+    background-color: #fff;
     border-radius: 10px;
-    border: 5px solid #ffd700;
-    /* Amarillo */
-}
-
-.contenido h3 {
-    font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 
 }
 
-.contenido p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    text-align: justify;
+.card-container {
+    margin-top: 100px;
+    /* Ajusta este valor para evitar que el header cubra el contenido */
     margin-bottom: 100px;
-    /* Ajusta este valor según sea necesario para dar espacio suficiente al pie de copyright */
+    /* Ajusta este valor para evitar que el footer cubra el contenido */
+}
+
+.card-header {
+    background-color: #ffffff;
+    text-align: center;
+
+
+}
+
+.profile-picture {
+    width: 20%;
+    height: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: justify;
+}
+
+
+/* Media query para dispositivos de hasta 768px de ancho */
+@media (max-width: 768px) {
+    .card {
+        margin: 30px auto;
+    }
+
+    .profile-picture {
+        width: 50%;
+    }
+}
+
+/* Media query para dispositivos de hasta 480px de ancho */
+@media (max-width: 480px) {
+    .card {
+        margin: 20px auto;
+    }
+
+    .profile-picture {
+        width: 60%;
+    }
 }
