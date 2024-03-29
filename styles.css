@@ -20,6 +20,7 @@ body {
     /* Evitar desplazamiento horizontal */
     margin-top: 0;
     /* Restaurar el margen superior predeterminado */
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 .header {
@@ -59,7 +60,7 @@ ul {
 }
 
 .menu_hi:checked+.ul_link {
-    margin-top: -15px;
+    margin-top: -17px;
     width: 100vw;
     height: 100vh;
     padding-top: 95px;
@@ -109,6 +110,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 .social-icons .row {
@@ -140,6 +142,7 @@ ul {
     outline: none;
     border-radius: 0 5px 5px 0;
     transition: all 0s ease-out;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 .row button:active {
@@ -212,6 +215,7 @@ ul {
     /*tmaño del texto menu*/
     color: var(--color_blanco);
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 @media(min-width: 768px) {
@@ -253,12 +257,14 @@ h1 {
     text-align: center;
     margin-bottom: 30px;
     color: #333;
+
 }
 
 .song {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 .song-image {
@@ -266,11 +272,12 @@ h1 {
     margin-right: 20px;
     border-radius: 5px;
     /* Borde redondeado */
+    margin-top: 15px;
 }
 
 .song-info {
     flex: 1;
-    font-size: 1.2rem;
+    font-size: 1 rem;
     /* Tamaño de fuente */
 }
 
@@ -286,6 +293,20 @@ h1 {
 
 }
 
+audio {
+    margin-top: 10px;
+    /* Espacio entre la información de la canción y el reproductor de audio */
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #333;
+}
 
 .separator {
     margin-top: 20px;
@@ -294,25 +315,21 @@ h1 {
     border-top: 1px solid #ccc;
 }
 
-audio {
-    margin-top: 10px;
-    /* Espacio entre la información de la canción y el reproductor de audio */
-}
-
 .spotify-link {
-    display: block;
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 12px;
-    background-color: #1DB954;
-    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1db954;
+    color: #fff;
     text-decoration: none;
-    border-radius: 80px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 .spotify-link:hover {
     background-color: #168f3f;
+
 }
 
 footer {
@@ -323,6 +340,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 9999;
+    /* Asegura que el footer esté sobre todos los demás elementos */
 }
 
 @media screen and (max-width: 768px) {
@@ -374,4 +393,42 @@ footer {
     .social-icons .row button {
         margin-bottom: 10px;
     }
+
+}
+
+h1 {
+    font-size: 1.3em;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    height: 100%;
+    /* Asegura que el encabezado tenga altura para que se pueda centrar verticalmente */
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    /* Cambiar el tamaño de fuente a 16 píxeles */
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    /* Cambiar el tipo de fuente a Arial o una fuente sans-serif alternativa */
+    line-height: 1.5;
+    /* Establece la altura de línea a 1.5 veces el tamaño de la fuente */
+}
+
+h1 {
+    font-size: 24px;
+    /* Cambiar el tamaño de fuente del h1 a 24 píxeles */
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    /* Cambiar el tipo de fuente del h1 a Arial o una fuente sans-serif alternativa */
+}
+
+h2 {
+    font-size: 20px;
+    /* Cambiar el tamaño de fuente del h2 a 20 píxeles */
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    /* Cambiar el tipo de fuente del h2 a Arial o una fuente sans-serif alternativa */
 }
