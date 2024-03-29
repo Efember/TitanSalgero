@@ -3,24 +3,29 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+
 }
 
 .container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 0px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 .form-group {
     margin-bottom: 20px;
+
 }
 
 label {
@@ -35,6 +40,7 @@ textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+
 }
 
 textarea {
@@ -50,10 +56,12 @@ textarea {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 .submit-button:hover {
     background-color: #168f3f;
+
 }
 
 /* Estilos para dispositivos de pantalla pequeña */
@@ -68,6 +76,7 @@ textarea {
     textarea {
         width: calc(100% - 20px);
         /* Restar el espacio de relleno para evitar el desbordamiento horizontal */
+
     }
 
     .submit-button {
